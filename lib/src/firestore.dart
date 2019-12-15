@@ -534,7 +534,7 @@ class Query<T extends firestore_interop.QueryJsImpl>
   ///
   /// Returns non-null created [Query].
   Query where(/*String|FieldPath*/ fieldPath,
-          String /*'<'|'<='|'=='|'>='|'>'*/ opStr, value) =>
+          String /*'<'|'<='|'=='|'>='|'>'|'in'|'array-contains'|'array-contains-any'*/ opStr, value) =>
       Query.fromJsObject(jsObject.where(fieldPath, opStr, jsify(value)));
 
   /// Calls js paginating [method] with [DocumentSnapshot] or List of [fieldValues].

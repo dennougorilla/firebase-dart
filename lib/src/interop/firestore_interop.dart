@@ -228,7 +228,7 @@ abstract class QueryJsImpl {
   external QueryJsImpl startAt(
       /*DocumentSnapshot|List<dynamic>*/ snapshotOrFieldValues);
   external QueryJsImpl where(/*String|FieldPath*/ fieldPath,
-      String /*'<'|'<='|'=='|'>='|'>'*/ opStr, value);
+      String /*'<'|'<='|'=='|'>='|'>'|'in'|'array-contains'|'array-contains-any'*/ opStr, value);
 }
 
 @JS('QuerySnapshot')
